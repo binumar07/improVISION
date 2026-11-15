@@ -1,0 +1,308 @@
+{
+  "crops": [
+    {
+      "id": "pearl_millet",
+      "name": "Pearl Millet (Gero / Maiwa)",
+      "category": "Cereal",
+      "scientific_name": "Pennisetum glaucum",
+      "duration_days": 80,
+      "stages": {
+        "ini_days": 15,
+        "dev_days": 25,
+        "mid_days": 25,
+        "late_days": 15
+      },
+      "kc": {
+        "ini": 0.30,
+        "mid": 1.00,
+        "late": 0.30
+      },
+      "thermal": {
+        "t_base": 12.0,
+        "t_opt_min": 28.0,
+        "t_opt_max": 36.0,
+        "t_crit_max": 42.0,
+        "gdd_required": 1300,
+        "heat_tolerance": "Very High"
+      },
+      "root_depth_m": 1.2,
+      "p_depletion": 0.60,
+      "ky_mid": 0.60,
+      "drought_tolerance": "Very High",
+      "optimal_zones": ["Sahel", "Sudan Savanna"],
+      "soil_suitability": ["Sandy", "Loamy Sand", "Sandy Loam"],
+      "n_fixing": false,
+      "n_demand_kg_ha": 40,
+      "forage_value": "High (Nutritious stalks for livestock in dry season)",
+      "erosion_control": "High (Fibrous dense root web binds sandy topsoil)",
+      "market_value": "Medium-High (Staple grain & local fura/kunu beverage market)",
+      "rotation_benefits": "Extremely heat- and drought-hardy, deep penetrating fibrous roots break hardpans."
+    },
+    {
+      "id": "sorghum",
+      "name": "Sorghum (Guinea Corn / Dawa)",
+      "category": "Cereal",
+      "scientific_name": "Sorghum bicolor",
+      "duration_days": 110,
+      "stages": {
+        "ini_days": 20,
+        "dev_days": 35,
+        "mid_days": 35,
+        "late_days": 20
+      },
+      "kc": {
+        "ini": 0.30,
+        "mid": 1.05,
+        "late": 0.55
+      },
+      "thermal": {
+        "t_base": 10.0,
+        "t_opt_min": 26.0,
+        "t_opt_max": 34.0,
+        "t_crit_max": 38.5,
+        "gdd_required": 1600,
+        "heat_tolerance": "High"
+      },
+      "root_depth_m": 1.5,
+      "p_depletion": 0.55,
+      "ky_mid": 0.90,
+      "drought_tolerance": "High",
+      "optimal_zones": ["Sudan Savanna", "Northern Guinea Savanna"],
+      "soil_suitability": ["Sandy Loam", "Loam", "Clay Loam"],
+      "n_fixing": false,
+      "n_demand_kg_ha": 60,
+      "forage_value": "Very High (Prime crop residue for Sahelian ruminants)",
+      "erosion_control": "High (Extensive adventitious root system)",
+      "market_value": "High (Major industrial brewing & flour staple)",
+      "rotation_benefits": "High biomass producer, efficient water use, tolerant to waterlogging & drought."
+    },
+    {
+      "id": "maize_early",
+      "name": "Maize (Early Maturing / Masara)",
+      "category": "Cereal",
+      "scientific_name": "Zea mays",
+      "duration_days": 90,
+      "stages": {
+        "ini_days": 18,
+        "dev_days": 28,
+        "mid_days": 30,
+        "late_days": 14
+      },
+      "kc": {
+        "ini": 0.30,
+        "mid": 1.20,
+        "late": 0.40
+      },
+      "thermal": {
+        "t_base": 10.0,
+        "t_opt_min": 22.0,
+        "t_opt_max": 30.0,
+        "t_crit_max": 35.0,
+        "gdd_required": 1450,
+        "heat_tolerance": "Moderate"
+      },
+      "root_depth_m": 1.0,
+      "p_depletion": 0.50,
+      "ky_mid": 1.50,
+      "drought_tolerance": "Moderate",
+      "optimal_zones": ["Sudan Savanna", "Northern Guinea Savanna", "Southern Guinea Savanna"],
+      "soil_suitability": ["Loam", "Sandy Loam", "Clay Loam"],
+      "n_fixing": false,
+      "n_demand_kg_ha": 100,
+      "forage_value": "Medium (Stovers used for livestock bedding/feed)",
+      "erosion_control": "Moderate (Leaves bare soil between rows in early stages)",
+      "market_value": "Very High (Immediate cash liquidity across all Nigerian markets)",
+      "rotation_benefits": "High yield potential; requires good moisture and temperature <35°C at tasseling/silking."
+    },
+    {
+      "id": "cowpea",
+      "name": "Cowpea (Beans / Wake)",
+      "category": "Legume",
+      "scientific_name": "Vigna unguiculata",
+      "duration_days": 70,
+      "stages": {
+        "ini_days": 15,
+        "dev_days": 20,
+        "mid_days": 25,
+        "late_days": 10
+      },
+      "kc": {
+        "ini": 0.40,
+        "mid": 1.15,
+        "late": 0.30
+      },
+      "thermal": {
+        "t_base": 10.0,
+        "t_opt_min": 25.0,
+        "t_opt_max": 33.0,
+        "t_crit_max": 37.0,
+        "gdd_required": 1100,
+        "heat_tolerance": "High"
+      },
+      "root_depth_m": 0.8,
+      "p_depletion": 0.55,
+      "ky_mid": 0.75,
+      "drought_tolerance": "High",
+      "optimal_zones": ["Sahel", "Sudan Savanna", "Northern Guinea Savanna"],
+      "soil_suitability": ["Sandy", "Sandy Loam", "Loam"],
+      "n_fixing": true,
+      "n_fixation_kg_ha": 40,
+      "forage_value": "Very High (Cowpea hay 'Harawa' commands premium dry season prices)",
+      "erosion_control": "Very High (Spreading canopy provides rapid dense ground cover)",
+      "market_value": "Extremely High (Essential dietary protein, daily cash crop)",
+      "rotation_benefits": "Fixes 30-50 kg N/ha, enriches soil, breaks Striga weed seed germination."
+    },
+    {
+      "id": "groundnut",
+      "name": "Groundnut (Peanut / Gyada)",
+      "category": "Legume",
+      "scientific_name": "Arachis hypogaea",
+      "duration_days": 105,
+      "stages": {
+        "ini_days": 20,
+        "dev_days": 30,
+        "mid_days": 35,
+        "late_days": 20
+      },
+      "kc": {
+        "ini": 0.40,
+        "mid": 1.15,
+        "late": 0.60
+      },
+      "thermal": {
+        "t_base": 12.0,
+        "t_opt_min": 25.0,
+        "t_opt_max": 32.0,
+        "t_crit_max": 36.5,
+        "gdd_required": 1550,
+        "heat_tolerance": "High"
+      },
+      "root_depth_m": 0.9,
+      "p_depletion": 0.50,
+      "ky_mid": 0.70,
+      "drought_tolerance": "High",
+      "optimal_zones": ["Sudan Savanna", "Northern Guinea Savanna"],
+      "soil_suitability": ["Sandy Loam", "Loamy Sand", "Light Loam"],
+      "n_fixing": true,
+      "n_fixation_kg_ha": 45,
+      "forage_value": "High (Groundnut haulms are rich feed for sheep and goats)",
+      "erosion_control": "High (Canopy covers ground during heavy rainfall period)",
+      "market_value": "Very High (Edible oil, groundnut paste, confectionery)",
+      "rotation_benefits": "Excellent legume rotation for cereals; provides soil cover and high residue nitrogen."
+    },
+    {
+      "id": "soybean",
+      "name": "Soybean (Waken Soya)",
+      "category": "Legume",
+      "scientific_name": "Glycine max",
+      "duration_days": 100,
+      "stages": {
+        "ini_days": 18,
+        "dev_days": 27,
+        "mid_days": 35,
+        "late_days": 20
+      },
+      "kc": {
+        "ini": 0.40,
+        "mid": 1.15,
+        "late": 0.50
+      },
+      "thermal": {
+        "t_base": 10.0,
+        "t_opt_min": 22.0,
+        "t_opt_max": 30.0,
+        "t_crit_max": 35.0,
+        "gdd_required": 1400,
+        "heat_tolerance": "Moderate"
+      },
+      "root_depth_m": 1.0,
+      "p_depletion": 0.50,
+      "ky_mid": 1.00,
+      "drought_tolerance": "Moderate",
+      "optimal_zones": ["Northern Guinea Savanna", "Southern Guinea Savanna"],
+      "soil_suitability": ["Loam", "Clay Loam", "Sandy Clay Loam"],
+      "n_fixing": true,
+      "n_fixation_kg_ha": 55,
+      "forage_value": "Medium (High protein meal after oil extraction)",
+      "erosion_control": "High (Dense vegetative canopy reduces raindrop impact)",
+      "market_value": "Very High (High demand from poultry feed millers)",
+      "rotation_benefits": "Potent suicidal germination trigger for Striga weed; strong nitrogen accumulator."
+    },
+    {
+      "id": "sesame",
+      "name": "Sesame (Beni Seed / Ridi)",
+      "category": "Oilseed",
+      "scientific_name": "Sesamum indicum",
+      "duration_days": 85,
+      "stages": {
+        "ini_days": 15,
+        "dev_days": 25,
+        "mid_days": 30,
+        "late_days": 15
+      },
+      "kc": {
+        "ini": 0.35,
+        "mid": 1.10,
+        "late": 0.25
+      },
+      "thermal": {
+        "t_base": 12.0,
+        "t_opt_min": 27.0,
+        "t_opt_max": 35.0,
+        "t_crit_max": 40.0,
+        "gdd_required": 1350,
+        "heat_tolerance": "Very High"
+      },
+      "root_depth_m": 1.0,
+      "p_depletion": 0.60,
+      "ky_mid": 0.70,
+      "drought_tolerance": "Very High",
+      "optimal_zones": ["Sudan Savanna", "Northern Guinea Savanna", "Southern Guinea Savanna"],
+      "soil_suitability": ["Sandy Loam", "Well-drained Loam"],
+      "n_fixing": false,
+      "n_demand_kg_ha": 30,
+      "forage_value": "Low (Not preferred for animal browse)",
+      "erosion_control": "Moderate (Erect growth habit)",
+      "market_value": "Extremely High (Major international export foreign exchange earner)",
+      "rotation_benefits": "High export cash crop, thrives in high heat and low moisture, ideal catch crop."
+    },
+    {
+      "id": "cassava",
+      "name": "Cassava (Rogo)",
+      "category": "Root/Tuber",
+      "scientific_name": "Manihot esculenta",
+      "duration_days": 300,
+      "stages": {
+        "ini_days": 30,
+        "dev_days": 60,
+        "mid_days": 150,
+        "late_days": 60
+      },
+      "kc": {
+        "ini": 0.50,
+        "mid": 1.10,
+        "late": 0.50
+      },
+      "thermal": {
+        "t_base": 14.0,
+        "t_opt_min": 25.0,
+        "t_opt_max": 32.0,
+        "t_crit_max": 38.0,
+        "gdd_required": 3200,
+        "heat_tolerance": "Very High"
+      },
+      "root_depth_m": 1.2,
+      "p_depletion": 0.65,
+      "ky_mid": 0.70,
+      "drought_tolerance": "Very High",
+      "optimal_zones": ["Southern Guinea Savanna", "Derived Savanna", "Rainforest"],
+      "soil_suitability": ["Sandy Loam", "Loam"],
+      "n_fixing": false,
+      "n_demand_kg_ha": 80,
+      "forage_value": "Medium-High (Cassava leaves and peelings for livestock feed)",
+      "erosion_control": "High (Multi-tier canopy and extensive root tuber anchors)",
+      "market_value": "Very High (Garri, fufu, industrial starch, cassava chips)",
+      "rotation_benefits": "Climate shock absorber; deep root system withstands prolonged droughts and heat spells."
+    }
+  ]
+}

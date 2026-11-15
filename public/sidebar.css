@@ -1,0 +1,33 @@
+/* Persistent desktop sidebar; mobile becomes an off-canvas drawer. */
+:root { --sidebar-width: 238px; --sidebar-transition: 240ms ease; }
+#sidebar { position: fixed; inset: 0 auto 0 0; z-index: 999; width: var(--sidebar-width);
+  padding: 24px 16px; overflow-y: auto; background: #0b1628; border-right: 1px solid #29445d;
+  box-shadow: 8px 0 28px rgba(0,0,0,.25); transform: none; transition: width var(--sidebar-transition); }
+#sidebar .sidebar-link { display:flex; align-items:center; gap:12px; padding:12px 13px;
+  border:1px solid #263449; border-radius:11px; color:#dbeafe; font-size:13px;
+  text-decoration:none; background:rgba(30,41,59,.72); }
+#sidebar .sidebar-link i { width:18px; color:#67e8f9; text-align:center; }
+#sidebar .sidebar-link:hover, #sidebar .sidebar-link:focus { background:#164e63; border-color:#0891b2; outline:none; }
+.sidebar-divider { height:1px; margin:18px 0; background:#334155; }
+#sidebar-close { display:none; }
+#sidebar-overlay { display:none; }
+body { padding-left: var(--sidebar-width); }
+#hamburger { display:none; }
+html { scroll-behavior:smooth; scroll-padding-top:16px; }
+@media (max-width: 767px) {
+  body { padding-left:0; }
+  #hamburger { display:block; position:fixed; top:12px; left:12px; z-index:1001; width:42px; height:42px;
+    border:1px solid rgba(103,232,249,.45); border-radius:12px; background:#0f2938; color:#a5f3fc;
+    font-size:18px; box-shadow:0 8px 24px rgba(0,0,0,.28); }
+  #sidebar { width:min(82vw,300px); transform:translateX(-105%); transition:transform var(--sidebar-transition); }
+  #sidebar.active { transform:translateX(0); }
+  #sidebar-close { display:block; }
+  #sidebar-overlay { display:block; position:fixed; inset:0; z-index:998; background:rgba(2,6,23,.72);
+    opacity:0; visibility:hidden; transition:opacity var(--sidebar-transition),visibility var(--sidebar-transition); }
+  #sidebar-overlay.active { opacity:1; visibility:visible; }
+  body > header { padding-top:66px; }
+  main { padding-left:12px !important; padding-right:12px !important; padding-top:18px !important; }
+  #map { height:300px; }
+  main .rounded-2xl { min-width:0; }
+}
+@media (prefers-reduced-motion:reduce) { #sidebar,#sidebar-overlay {transition:none;} html {scroll-behavior:auto;} }

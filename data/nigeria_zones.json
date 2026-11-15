@@ -1,0 +1,134 @@
+{
+  "zones": [
+    {
+      "id": "sahel",
+      "name": "Sahel Savanna",
+      "states": ["Borno", "Yobe"],
+      "representative_coords": { "lat": 13.0, "lon": 12.0 },
+      "rainfall_annual_mm": 400,
+      "season_length_days": 80,
+      "nimet_onset_window": "Late June to Early July",
+      "nimet_cessation_window": "Early to Mid September",
+      "dry_spell_risk": {
+        "timing": "Early to Mid-Season",
+        "typical_duration_days": 15,
+        "critical_window_doy": [195, 215],
+        "description": "High risk of severe dry spells shortly after sowing and during mid-July."
+      },
+      "soil_profile": {
+        "texture_class": "Sandy / Loamy Sand",
+        "sand_pct": 82,
+        "silt_pct": 10,
+        "clay_pct": 8,
+        "fc_vol_pct": 12.5,
+        "pwp_vol_pct": 4.5,
+        "awc_mm_per_m": 80,
+        "bulk_density_g_cm3": 1.55
+      }
+    },
+    {
+      "id": "sudan_savanna",
+      "name": "Sudan Savanna",
+      "states": ["Kano", "Katsina", "Sokoto", "Jigawa", "Kebbi", "Zamfara"],
+      "representative_coords": { "lat": 12.0022, "lon": 8.5920 },
+      "rainfall_annual_mm": 700,
+      "season_length_days": 105,
+      "nimet_onset_window": "Mid to Late June",
+      "nimet_cessation_window": "Late September to Early October",
+      "dry_spell_risk": {
+        "timing": "Mid-Season",
+        "typical_duration_days": 12,
+        "critical_window_doy": [200, 218],
+        "description": "Mid-season dry spells typically strike between July 18 and August 6."
+      },
+      "soil_profile": {
+        "texture_class": "Loamy Sand to Sandy Loam",
+        "sand_pct": 74,
+        "silt_pct": 16,
+        "clay_pct": 10,
+        "fc_vol_pct": 16.0,
+        "pwp_vol_pct": 6.5,
+        "awc_mm_per_m": 95,
+        "bulk_density_g_cm3": 1.50
+      }
+    },
+    {
+      "id": "northern_guinea",
+      "name": "Northern Guinea Savanna",
+      "states": ["Kaduna", "Bauchi", "Gombe", "Niger (North)"],
+      "representative_coords": { "lat": 10.5105, "lon": 7.4165 },
+      "rainfall_annual_mm": 1000,
+      "season_length_days": 140,
+      "nimet_onset_window": "Late May to Early June",
+      "nimet_cessation_window": "Mid to Late October",
+      "dry_spell_risk": {
+        "timing": "Early to Mid-Season",
+        "typical_duration_days": 8,
+        "critical_window_doy": [180, 195],
+        "description": "Mild to moderate dry spells during early vegetative growth."
+      },
+      "soil_profile": {
+        "texture_class": "Sandy Clay Loam / Loam",
+        "sand_pct": 60,
+        "silt_pct": 22,
+        "clay_pct": 18,
+        "fc_vol_pct": 22.0,
+        "pwp_vol_pct": 10.0,
+        "awc_mm_per_m": 120,
+        "bulk_density_g_cm3": 1.45
+      }
+    },
+    {
+      "id": "southern_guinea",
+      "name": "Southern Guinea Savanna",
+      "states": ["Plateau", "Benue", "Kogi", "Nasarawa", "Taraba", "Kwara", "Niger (South)"],
+      "representative_coords": { "lat": 8.8921, "lon": 7.1810 },
+      "rainfall_annual_mm": 1250,
+      "season_length_days": 180,
+      "nimet_onset_window": "Late April to Early May",
+      "nimet_cessation_window": "Late October to Early November",
+      "dry_spell_risk": {
+        "timing": "Mid-Season Break",
+        "typical_duration_days": 10,
+        "critical_window_doy": [215, 230],
+        "description": "Moderate dry spell in early to mid August coinciding with the southern break."
+      },
+      "soil_profile": {
+        "texture_class": "Loam / Clay Loam",
+        "sand_pct": 48,
+        "silt_pct": 28,
+        "clay_pct": 24,
+        "fc_vol_pct": 26.0,
+        "pwp_vol_pct": 12.5,
+        "awc_mm_per_m": 135,
+        "bulk_density_g_cm3": 1.40
+      }
+    },
+    {
+      "id": "derived_savanna_rainforest",
+      "name": "Derived Savanna & Rainforest (Southern Nigeria)",
+      "states": ["Oyo", "Ogun", "Osun", "Ondo", "Ekiti", "Edo", "Delta", "Enugu", "Anambra", "Imo", "Abia"],
+      "representative_coords": { "lat": 7.3775, "lon": 3.9470 },
+      "rainfall_annual_mm": 1500,
+      "season_length_days": 220,
+      "nimet_onset_window": "Late March to Early April",
+      "nimet_cessation_window": "Mid to Late November",
+      "dry_spell_risk": {
+        "timing": "August Break (Little Dry Season)",
+        "typical_duration_days": 18,
+        "critical_window_doy": [212, 235],
+        "description": "Well-known 'August Break' featuring 2-3 weeks of sharp rainfall drop in late July/August."
+      },
+      "soil_profile": {
+        "texture_class": "Sandy Loam to Ferric Luvisols",
+        "sand_pct": 55,
+        "silt_pct": 25,
+        "clay_pct": 20,
+        "fc_vol_pct": 24.0,
+        "pwp_vol_pct": 11.0,
+        "awc_mm_per_m": 130,
+        "bulk_density_g_cm3": 1.42
+      }
+    }
+  ]
+}
